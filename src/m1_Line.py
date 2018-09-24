@@ -374,7 +374,9 @@ class Line(object):
         #        The tests are already written (below).
         #        They include the Example in the above doc-string.
         # --------------------------------------------------------------
-        return Line(self.start, self.end).reverse()
+        self.start = self.original_end
+        self.end = self.original_start
+        return Line(self.start, self.end)
 
     def slope(self):
         """
@@ -699,7 +701,7 @@ class Line(object):
         #        The tests are already written (below).
         #        They include the Example in the above doc-string.
         # --------------------------------------------------------------
-        return Line(self.start.clone(), self.end.clone())
+        return Line(self.original_start, self.original_end)
 
 ########################################################################
 # The TEST functions for the  Line  class begin here.

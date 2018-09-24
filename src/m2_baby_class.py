@@ -40,8 +40,12 @@ def main():
 
 class Baby(object):
     def __init__(self, name):
-        name =
-        return 'Hello baby' + name
+        self.name = "Hello baby" + name
+    def hours_passed(self):
+
+
+
+
 
 # ----------------------------------------------------------------------
 # TODO: 2. Implement a class called   Baby   that has a constructor and

@@ -112,6 +112,7 @@ class CapitalT(object):
     """
 
     def __init__(self, intersection_center, width, height, letter_thickness):
+        self.intersection_center = rg.Point(x, y)
         """
         What comes in:
            -- self
