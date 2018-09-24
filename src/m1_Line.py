@@ -374,7 +374,7 @@ class Line(object):
         #        The tests are already written (below).
         #        They include the Example in the above doc-string.
         # --------------------------------------------------------------
-        return self.reverse()
+        return Line(self.start, self.end).reverse()
 
     def slope(self):
         """
