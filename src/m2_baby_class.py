@@ -2,8 +2,8 @@
 A   Baby   class and methods that use the Baby class.
 
 Authors: David Mutchler, Vibha Alangar, Dave Fisher, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Isaac Harper.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -36,6 +36,12 @@ def main():
         mckinley.feed_baby()
         for j in range(4):
             mckinley.hour_passes()
+
+
+class Baby(object):
+    def __init__(self, name):
+        name = 'name'
+
 
 
 # ----------------------------------------------------------------------
